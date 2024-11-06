@@ -1,0 +1,34 @@
+<!-- * Session 3 : HTML and CSS with javascript -->
+
+<!-- * to add JavaScript to html we use <script> </script> tag , we usually put it in the back of the body 
+
+* another way to use Javascript is by using attribute ; we add to the element the attribut onclick = " " between the double " 
+* we can write javascript "
+
+* The code in the script runs first when the page is uploaded then the onclick attribute runs after when we click on the element
+
+* For running math in the console like we used to do we'll be using console.log (); inside the script tag
+* -->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> HTML-CSS with JavaScript </title>
+    </head>
+
+    <body>
+        <h1>Hello World!</h1>
+        <button onclick="alert('Hello, JavaScript!');"> 
+            Click 
+        </button>
+        
+        <script>
+            console.log("Hello, JavaScript!");
+            console.log(10 + 5);
+            console.log(Math.sqrt(25));
+            console.log(` Estimated tax (10%) :         $${ Math.round((799 * 2 +2095 * 2 + 499 * 2)* 0.1 )/100 }`);
+        </script>
+    </body>
+</html>
