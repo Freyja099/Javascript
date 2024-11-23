@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart quantity</title>
+    </head>
+
+    <body>
+        <p> Cart quantity </p>
+        <script>
+            let CartQuantity = 0 ;
+        </script>
+
+        <button 
+        onclick = " console.log (`Cart quantity : ${CartQuantity}`) "
+        > Show Quantity </button>
+
+        <button
+        onclick = " 
+        CartQuantity++;
+        console.log(`Cart quantity : ${CartQuantity}` )"
+        > Add to Cart </button>
+
+        <button
+        onclick= " 
+        CartQuantity += 2;
+        console.log(`Cart quantity : ${CartQuantity}`)"
+        > +2 </button>
+
+        <button
+        onclick = " 
+        CartQuantity += 3;
+        console.log(`Cart quantity : ${CartQuantity}`)"
+        > +3 </button>
+
+        <button
+        onclick = " 
+        CartQuantity = 0;
+        console.log(`Cart quantity : ${CartQuantity}`)"
+        > Reset Cart </button>
+    </body>
+</html>
+
+<!-- ! I should be using camelCase -->
