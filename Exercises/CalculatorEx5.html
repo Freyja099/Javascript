@@ -1,0 +1,51 @@
+<!-- * Challenge exercise : Calculator -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculator </title>
+    </head>
+    
+    <body>
+        <script>
+            let calculation = ''; // this variable will store the calculation 
+        </script>
+        <div>
+            <button
+            onclick = "
+            calculation++;
+            console.log(calculation); 
+            "
+            > 1 </button>
+            <button
+            onclick = "
+            calculation += '2';
+            console.log(calculation);
+            "
+            > 2 </button>
+            <button
+            onclick = "
+            calculation += '3';
+            console.log(calculation);
+            "
+            > 3 </button>
+            <button
+            onclick="
+            calculation += ' + '  // * use ' + ' not '+'
+            console.log(calculation);
+            "             
+            > + </button>
+            <button
+            onclick = "
+            calculation = eval(calculation); // * eval() converts the calculation string into actual math 
+            console.log(calculation);
+            "
+            > = </button>
+        </div>
+    </body>
+</html>
+
+<!-- * Note: eval() takes a string and runs it as code.
+     * Avoid using eval() in real world projects since
+     * it can potentially be given harmful code to run.
+     * Only use eval() for learning purposes. -->
