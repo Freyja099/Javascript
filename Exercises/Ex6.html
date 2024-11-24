@@ -1,0 +1,75 @@
+<!-- * Exercise 6: Booleans and If statements-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Exercise 6 </title>
+    </head>
+
+    <body>
+        <!-- TODO 6-a : Create a variable called hour and save the current hour of the day display Good morning if it's between 6 and 12, Good afternoon if it's between 12 and 18, and Good evening if it's between 18 and 24-->
+
+        <!-- TODO 6-b : Continuing from 6-a try changing the value int the hour variable to make it display a different message -->
+        
+        <!-- TODO 6-c : Create a variable called name and save your name inside each message -->
+        <script>
+            const hour = 14;
+            const name = "Aya";
+            if ( hour > 6 && hour <= 12)
+            console.log(`Good morning ${name}` );
+
+            else if ( hour > 12 && hour <= 18)
+            console.log(`Good evening ${name}`);
+            
+            else 
+            console.log(`Good night ${name}`);
+
+        </script>
+
+    
+    <!-- TODO 6-d : Imagine an amusement park that has a discount for children (6 years and younger) or seniors(65 years and older) -->
+    
+    <!-- TODO 6-e : Let's say that the discount is only available if it is not a holiday -->
+
+
+       <script>
+        const age = 76;
+        if (age > 65 || age < 6 )
+        console.log(`Discount`);
+        else 
+        console.log(`No discount`);
+
+        const isHoliday = true;
+        const holiday = isHoliday && (age < 65 || age > 6);
+        if(holiday)
+        console.log(`No discount`);
+        else
+        console.log(`Discount`);
+    
+       </script>
+
+    <!-- TODO 6-f : Generate a random number with math.random -->
+    <!-- TODO 6-g : Create an if-statement and check if the number is less or greater than 0.5 and display a message in the console -->
+        <script>
+            const guess = "tails";
+            let result = Math.random();
+
+            console.log(result);
+            if(result < 0.5)
+            result = "heads";
+            else
+            result = "tails";
+            
+            if(guess === result)
+            console.log(`You win`);
+            else
+            console.log(`You lose`);
+
+            // TODO 6 j use instead ternary operators
+
+            console.log(result === guess ? "You win" : "You lose");
+        </script>
+    </body>
+
+</html>
