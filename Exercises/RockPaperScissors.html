@@ -1,0 +1,132 @@
+<!-- * Game : Rock paper Scissors part Booleans and If Statements -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Rock Paper Scissors </title>
+    </head>
+    
+    <body>
+        <p> Rock Paper Scissors </p>
+        <button
+        onclick = "
+        const randomNumber = Math.random();
+
+        if(randomNumber >= 0 && randomNumber < 1/3)
+        computerMove = 'rock';
+
+        else if( randomNumber >= 1/3 && randomNumber < 2/3 )
+        computerMove = 'paper';
+        
+        else 
+        computerMove = 'scissors';
+
+        console.log(computerMove);
+
+        switch(computerMove)
+        {
+            case 'rock':
+                alert( 'It\'s a tie ');
+                break;
+            
+            case 'paper':
+                alert(' You lose ');
+                break;
+            
+            case 'scissors':
+                alert(' You win ');
+                break;
+        }
+        "
+        > Rock </button>
+        <button
+        onclick = "
+        const randomNumber = Math.random();
+
+        if(randomNumber >= 0 && randomNumber < 1/3)
+        computerMove = 'rock';
+
+        else if( randomNumber >= 1/3 && randomNumber < 2/3 )
+        computerMove = 'paper';
+        
+        else 
+        computerMove = 'scissors';
+
+        console.log(computerMove);
+
+        switch(computerMove)
+        {
+            case 'rock':
+                alert(' You win ' );
+                break;
+            
+            case 'paper':
+                alert('It\'s a tie ');
+                break;
+            
+            case 'scissors':
+                alert(' You lose ' );
+                break;
+        }
+        "
+        > Paper </button>
+
+        <button
+        onclick = "
+        const randomNumber = Math.random();
+
+        if(randomNumber >= 0 && randomNumber < 1/3)
+        computerMove = 'rock';
+
+        else if( randomNumber >= 1/3 && randomNumber < 2/3 )
+        computerMove = 'paper';
+        
+        else 
+        computerMove = 'scissors';
+
+        console.log(computerMove);
+
+        switch(computerMove)
+        {
+            case 'rock':
+                alert( ' You lose ');
+                break;
+            
+            case 'paper':
+                alert(' You win ');
+                break;
+            
+            case 'scissors':
+                alert( 'It\'s a tie ');
+                break;
+        }
+        "
+        > Scissors </button>
+        
+        <script>
+            let computerMove = '';
+        </script>
+    </body>
+</html>
+
+<!-- ! One of the reason we don't use var to declare variables anymore is that var doesn't follow the rule of scope, inside {} var is still a global variable -->
+
+<!-- * In JavaScript Math.random() generates a random number greater or equal to 0 and less than 1 -->
+
+<!-- * To make the math.random() work for displaying rock paper or scissors we can divide the intervalle between 0 and 1 by 3 -->
+<!-- * 0 < randomNumber < 1/3  => rock -->
+<!-- * 1/3 < randomNumber < 2/3  => paper -->
+<!-- * 2/3 < randomNumber < 1  => scissors -->
+
+<!-- 
+switch(randomNumber)
+        {
+            case (randomNumber >= 0 && randomNumber < 1/3) :randomNumber = 'rock';
+            break;
+            case (randomNumber >= 1/3 && randomNumber < 2/3 ) : randomNumber = 'paper';
+            break;
+            case (randomNumber >= 2/3 && randomNumber < 1) : randomNumber = 'scissors';
+            break;
+        }
+-->
+
