@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+        <meta charset="utf-8">
+    </head>
+    <body>  <!-- onkeydown="UpDownKey()"   OR   onkeypress="keyPress()"   OR    onload="LoadEvent()"    OR     onunload="unloadEvent()"
+                 onresize="resize()"    OR   -->
+        <script>
+            function eventClick(){
+                document.write("That was a click event");
+            }
+
+            function doubleClick(){
+                alert(" This is a double click")
+            }
+
+            function mouseHover(){
+                document.write("Hovering over the button");
+            }
+
+            function keyPress(){
+                alert("You pressed a key");
+            }
+
+            function UpDownKey(){
+                alert("Up or Down Key")
+            }
+            function LoadEvent(){
+                alert("Page is loaded")
+            }
+            function unloadEvent(){
+                alert("Page is unloaded")
+            }
+            function RightClick(){
+                alert("Right Click")
+            }
+            function mouseLeave(){
+                console.log(" Mouse Left" )
+            }
+            function mouseUp(){
+                console.log("Mouse Up")
+            }
+            function resize(){
+                alert("Resized")
+            }
+        </script>
+
+
+        <h3>Click Event</h3>
+        <button onclick="eventClick()"> Click </button>
+        <br>
+        <h3>Double Click Event</h3>
+        <button ondblclick="doubleClick()"> Double Click </button>
+        <h3>Mouse Hover Event</h3>
+        <!-- <button onmouseenter="mouseHover()"> Hover </button> -->
+        <h3>Key press</h3>
+        <div style="background-color: purple; padding: 20px; margin: 10px; height: 20px; width: 80px; ">Add this to body</div>
+
+        <h3>Up or Down Key</h3>
+        <div style="background-color: greenyellow; padding: 20px; margin: 10px; height: 20px; width: 80px; "> Add it in the body </div>
+
+        <h3>Right Click</h3>
+        <button oncontextmenu="RightClick()">Right-Click</button>
+
+        <h3>Mouse Leave</h3>
+        <div onmouseleave="mouseLeave()" style="background-color: palevioletred; padding: 20px; margin: 10px; height: 20px; width: 80px; "> Open console </div>
+
+        <h3>Mouse up or Down</h3>
+        <div onmouseup="mouseUp()" style="background-color: skyblue; padding: 20px; margin: 10px; height: 20px; width: 80px; "> Open console </div>
+    </body>
+</html>
