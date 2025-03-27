@@ -32,4 +32,4 @@
 
 // * the default operator which is || can be used to since if the first value is true it won't check the second one and the result will be true
 
-// * the default operator and guard operator are called short circuits because it stops early 
+// * the default operator and guard operator are called short circuits because it stops early

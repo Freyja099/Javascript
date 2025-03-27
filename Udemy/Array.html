@@ -1,0 +1,56 @@
+<!-- Array -->
+
+<!-- To declare an array we use let array = [value1 , value2 ,...]-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let array = ['Apple', 'Banana', 'Cherry']; // Declare an array
+        delete array['Apple']; // Delete
+        array[0] = 'new apple'; // Change the value of an array
+        document.write("<ul>");
+        for(var i = 0 ; i < 4 ; i++){
+        document.write( "<li> " + array[i] + " </li> " );	
+        }
+        document.write("</ul>")
+    </script>
+
+    <h2>Sort</h2>
+    <script>
+        let sortAnArray = ['Cherry', 'Apple', 'Banana'];
+        document.write(sortAnArray + "<br>");
+        sortAnArray.sort(); // Sorting in alphabetical order
+        document.write(sortAnArray + "<br>");
+    </script>
+    <h2>Reverse</h2>
+    <script>
+        sortAnArray.reverse();
+        document.write(sortAnArray + "<br>");
+    </script>
+
+    <h2>Pop and Push</h2>
+    <script>
+        let array_2 = ['Apple', 'Banana', 'Cherry'];
+        array_2.pop();// delete the last element
+        document.write(array_2 + "<br>");
+        array_2.push('new fruit'); // add a new element
+        document.write(array_2 + "<br>");
+    </script>
+
+    <h2>Shift and Unshift</h2>
+    <script></script>
+    <h2>Concat</h2>
+    <script>
+        let array1 = ['Apple', 'Banana', 'Cherry'];
+        let array2 = ['Kiwi', 'Mango', 'Orange'];
+        let array3 = array1.concat(array2);
+        document.write(array3 + "<br>");
+    </script>
+</body>
+</html>
